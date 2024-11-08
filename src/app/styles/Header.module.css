@@ -1,4 +1,5 @@
 /* /styles/header.css */
+
 .header {
   position: sticky; /* Stick the header to the top of the viewport */
   top: 0; /* Position it at the top */
@@ -6,12 +7,14 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
+  max-width: 1260px; /* Set a max-width to control centering */
+  margin: 0 auto; /* Center the header horizontally */
   background-color: #1b1b2f; /* Dark background for contrast */
   color: #fff;
   z-index: 1000; /* Ensure it stays above other elements */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+  border-radius: 10px;
   transition: background-color 0.3s ease;
-  border-radius: 10px; 
 }
 
 .logoSection {
@@ -62,9 +65,6 @@
   background-color: #0056b3; /* Darker blue on hover */
 }
 
-/* Overlay styles for the button-like effect */
-
-
 .linkText {
   color: #4ecca3; /* White text color */
   font-size: 20px; /* Font size */
@@ -81,18 +81,19 @@
 /* Responsive styling */
 @media (max-width: 768px) {
   .header {
-      flex-direction: column;
-      text-align: center; /* Center text on smaller screens */
+    flex-direction: column;
+    text-align: center; /* Center text on smaller screens */
   }
 
   .nav {
-      display: flex;
-      flex-direction: column; /* Stack navigation items vertically */
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center; /* Center nav items on smaller screens */
   }
 
   .nav a {
-      margin: 0.5rem 0; /* Space out the items */
+    margin: 0.5rem 0; /* Space out the items */
   }
 }
+
 
   
